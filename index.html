@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width" intial-scale="1.0">
+        <title>Ecommerece product website</title>
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            <div class="Logo">Ecommerce</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fas fa-shopping-cart"></i>
+            </ul>
+        </nav>
+        <div class="flex-box">
+            <div class="left">
+                <div class="big-img">
+                    <img src="https://images.meesho.com/images/products/265819725/onmot_512.webp">
+                </div>
+                <div class="images">
+                    <div class="small-img">
+                    <img src="https://m.media-amazon.com/images/I/31Z2kr8BAkL.jpg" on click="showimg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="https://5.imimg.com/data5/ANDROID/Default/2024/2/389749080/TY/KQ/LK/193855993/product-jpeg-500x500.jpg" on click="showimg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/5/307171410/ZF/HK/BJ/58398864/tipsy-849-green-a-2--500x500.jpg" on click="showimg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/5/307171259/FP/AI/LV/58398864/tipsy-845-yellow-a-2--500x500.jpg" on click="showimg(this.src)">
+                </div>
+                </div>
+            </div>
+          <div class="right">
+            <div class="url"> Home >Product >Top </div>
+            <div class="pname">Tops for women</div>
+            <div class="ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <div class="Price">$40</div>
+            <div class="size">
+                <p>size :</p>
+                <div class="psize active">M</div>
+                <div class="psize ">L</div>
+                <div class="psize ">XL</div>
+                <div class="psize ">XXL</div>
+            </div>
+            <div class="quantity:">
+                <p>Quantity</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to cart</button>
+                <button class="buy-btn"> Buy now</button>
+            </div>
+          </div>
+        </div>
+        <script>
+             letbigimg=document.queryselector('.big-img img');
+             function showimg(pic){
+                bigimg.src=pic;
+             }
+        </script>
+    </body>
+</html>
